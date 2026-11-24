@@ -131,6 +131,20 @@ ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.u
 --
 
 INSERT INTO public.games VALUES (1, 12, 1);
+INSERT INTO public.games VALUES (2, 636, 2);
+INSERT INTO public.games VALUES (3, 89, 2);
+INSERT INTO public.games VALUES (4, 595, 3);
+INSERT INTO public.games VALUES (5, 625, 3);
+INSERT INTO public.games VALUES (6, 960, 2);
+INSERT INTO public.games VALUES (7, 607, 2);
+INSERT INTO public.games VALUES (8, 210, 2);
+INSERT INTO public.games VALUES (9, 963, 4);
+INSERT INTO public.games VALUES (10, 46, 4);
+INSERT INTO public.games VALUES (11, 346, 5);
+INSERT INTO public.games VALUES (12, 17, 5);
+INSERT INTO public.games VALUES (13, 310, 4);
+INSERT INTO public.games VALUES (14, 343, 4);
+INSERT INTO public.games VALUES (15, 705, 4);
 
 
 --
@@ -138,20 +152,24 @@ INSERT INTO public.games VALUES (1, 12, 1);
 --
 
 INSERT INTO public.users VALUES (1, 'test');
+INSERT INTO public.users VALUES (2, 'user_1795487330897');
+INSERT INTO public.users VALUES (3, 'user_1795487330896');
+INSERT INTO public.users VALUES (4, 'user_1795487359196');
+INSERT INTO public.users VALUES (5, 'user_1795487359195');
 
 
 --
 -- Name: games_game_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.games_game_id_seq', 1, true);
+SELECT pg_catalog.setval('public.games_game_id_seq', 15, true);
 
 
 --
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 1, true);
+SELECT pg_catalog.setval('public.users_user_id_seq', 5, true);
 
 
 --
